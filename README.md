@@ -1,2 +1,2 @@
 # spgblg
-simple go blog
+simple blog with golang no any framework
