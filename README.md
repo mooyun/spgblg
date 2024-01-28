@@ -1,2 +1,2 @@
-# s-p-g-b-l-g
+# spgblg
 simple go blog
