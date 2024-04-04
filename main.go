@@ -19,10 +19,12 @@ func index(w http.ResponseWriter,r *http.Request) {
 	var indexDate IndexDate
 	indexDate.Title="spgblg"
 	indexDate.Desc="刚刚开始"
-	t:=template.New("index.html")
+
+	t:=template.New("index.h0tml")
 	path,_:=os.Getwd()
 	t,_=t.ParseFiles(path+"/template/index.html")
 	t.Execute(w,indexDate)
+	
 	jsonStr,_:=json.Marshal(indexDate)
 	w.Write([]byte(jsonStr))
 }
